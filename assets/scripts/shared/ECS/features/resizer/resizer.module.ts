@@ -70,7 +70,11 @@ export class ResizerModule extends ECSModule {
 
     const { x, y } = landscape ? this.designLandscape : this.designPortrait;
 
-    view.setDesignResolutionSize(x, y, ResolutionPolicy.FIXED_WIDTH);
+    const policy = landscape
+      ? ResolutionPolicy.SHOW_ALL
+      : ResolutionPolicy.FIXED_WIDTH;
+
+    view.setDesignResolutionSize(x, y, policy);
 
     await nextFrame();
 
