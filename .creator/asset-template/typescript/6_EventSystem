@@ -1,0 +1,11 @@
+import { ECSSystem, Entity, Filtered, Includes, OnEvent } from 'shared/ECS';
+
+type EventType = undefined;
+
+@Includes()
+// @OnEvent()
+export class <%CamelCaseClassName%> extends ECSSystem<EventType> {
+  protected onExecute(filtered: Filtered<Entity>, data?: EventType): void {
+    filtered.loop((entity) => {});
+  }
+}

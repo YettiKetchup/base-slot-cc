@@ -1,0 +1,19 @@
+{
+  /* Base configuration. Do not edit this field. */
+  "extends": "./temp/tsconfig.cocos.json",
+
+  /* Add your custom configuration here. */
+  "compilerOptions": {
+    "strict": false,
+    "lib": ["ES2022", "DOM"],
+    "paths": {
+      "bar/*": ["./assets/lib/bar-1.2.3/*"],
+      "app/*": ["./assets/scripts/app/*"],
+      "scenes/*": ["./assets/scripts/scenes/*"],
+      "widgets/*": ["./assets/scripts/widgets/*"],
+      "features/*": ["./assets/scripts/features/*"],
+      "entities/*": ["./assets/scripts/entities/*"],
+      "shared/*": ["./assets/scripts/shared/*"]
+    }
+  }
+}

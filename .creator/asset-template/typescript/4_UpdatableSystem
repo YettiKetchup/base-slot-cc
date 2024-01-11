@@ -1,0 +1,15 @@
+import {
+  UpdatableSystem,
+  Filtered,
+  Includes,
+  OnHook,
+  Lifecycle,
+} from 'shared/ECS';
+
+@Includes()
+@OnHook(Lifecycle.Update)
+export class <%CamelCaseClassName%> extends UpdatableSystem {
+  protected onExecute(filtered: Filtered, dt: number): void {
+    filtered.loop((entity) => {});
+  }
+}

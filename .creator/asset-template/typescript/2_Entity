@@ -1,0 +1,9 @@
+import { _decorator } from 'cc';
+import { Entity } from 'shared/ECS/core/entity';
+const { ccclass, type, menu } = _decorator;
+
+@ccclass('<%CamelCaseClassName%>')
+@menu('Modules/Shared/Entities/<%CamelCaseClassName%>')
+export class <%CamelCaseClassName%> extends Entity {
+
+}

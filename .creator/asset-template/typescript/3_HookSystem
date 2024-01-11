@@ -1,0 +1,9 @@
+import { HookSystem, Filtered, Includes, OnHook, Lifecycle } from 'shared/ECS';
+
+@Includes()
+@OnHook(Lifecycle.OnLoad)
+export class <%CamelCaseClassName%> extends HookSystem {
+  protected onExecute(filtered: Filtered): void {
+    filtered.loop((entity) => {});
+  }
+}

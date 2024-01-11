@@ -1,0 +1,10 @@
+{
+  "imports": {
+    "app/": "./assets/scripts/app/",
+    "scenes/": "./assets/scripts/scenes/",
+    "widgets/": "./assets/scripts/widgets/",
+    "features/": "./assets/scripts/features/",
+    "entities/": "./assets/scripts/entities/",
+    "shared/": "./assets/scripts/shared/"
+  }
+}

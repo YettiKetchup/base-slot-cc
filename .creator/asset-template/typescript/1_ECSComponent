@@ -1,0 +1,9 @@
+import { _decorator } from 'cc';
+import { ECSComponent } from 'shared/ECS/core/component';
+const { ccclass, property } = _decorator;
+
+@ccclass('<%CamelCaseClassName%>')
+export class <%CamelCaseClassName%> extends ECSComponent {
+  @property
+  public value: number = 100;
+}

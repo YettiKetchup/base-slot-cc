@@ -1,0 +1,16 @@
+import {
+  ReactiveSystem,
+  Entity,
+  Filtered,
+  Includes,
+  OnChanges,
+  WatchFor,
+} from 'shared/ECS';
+
+@Includes()
+@OnChanges(WatchFor.Changed)
+export class <%CamelCaseClassName%> extends ReactiveSystem {
+  protected onExecute(filtered: Filtered, changed: Entity): void {
+    filtered.loop((entity) => {});
+  }
+}
